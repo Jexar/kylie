@@ -8,10 +8,10 @@
      2. copy an entry below and set date, title, sport, venue, note and dir
      3. double-click build-photos.bat
 
-   Frames appear in filename order. `cover` picks the card image for the Work
+   Frames appear in filename order. `cover` picks the card image for the Photos
    page — leave it "" to use the first frame.
 
-   Order of entries doesn't matter — the Work page sorts by date, newest first.
+   Order of entries doesn't matter — the Photos page sorts by date, newest first.
    An album whose folder is empty or missing shows as a placeholder card and
    isn't clickable, so a date can go up before the edit is finished. */
 

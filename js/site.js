@@ -1,5 +1,5 @@
 /* [Your Name] — portfolio site behaviour.
-   The phone menu, the album archive on work.html, and the album page with its
+   The phone menu, the album archive on photos.html, and the album page with its
    frame viewer. Album data lives in js/albums.js. No build step, no
    dependencies. */
 
@@ -90,7 +90,7 @@
     return n + " " + (n === 1 ? one : many);
   }
 
-  /* --- The archive (work.html) ------------------------------------------ */
+  /* --- The archive (photos.html) ------------------------------------------ */
 
   var archive = document.getElementById("archive");
   if (archive) { buildArchive(archive); }

@@ -5,7 +5,7 @@ A four-page static site. No build step, no framework, no dependencies — open
 
 ```
 index.html      Home
-work.html       Gallery with category filters
+photos.html     Gallery with category filters
 about.html      Bio, facts, clients
 contact.html    Enquiry form
 css/styles.css  Everything visual. Tokens are at the top.

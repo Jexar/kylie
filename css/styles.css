@@ -437,7 +437,7 @@ a:hover { color: var(--accent); }
   }
 }
 
-/* --- Filters (work page) ------------------------------------------------- */
+/* --- Filters (photos page) ------------------------------------------------- */
 
 .filters {
   display: flex;
@@ -470,7 +470,7 @@ a:hover { color: var(--accent); }
   color: var(--bg);
 }
 
-/* --- Album archive (work page) ------------------------------------------- */
+/* --- Album archive (photos page) ------------------------------------------- */
 
 .archive { display: grid; gap: clamp(44px, 5.5vw, 76px); }
 
