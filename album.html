@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Album — [Your Name], Sports Photographer</title>
+<meta name="description" content="A single game from the archive of [Your Name], sports photographer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Spectral:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="site-head__inner">
+    <a class="wordmark" href="index.html">[Your Name]</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <svg width="22" height="14" viewBox="0 0 22 14" aria-hidden="true" focusable="false">
+        <path d="M0 1h22M0 7h22M0 13h22" stroke="currentColor" stroke-width="1.6"/>
+      </svg>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <ul>
+        <li><a href="work.html" aria-current="page">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div id="album-body">
+
+    <section class="shell stack page-head album-head">
+      <p class="label"><a class="album-head__back" href="work.html">Archive</a> <span aria-hidden="true">/</span> <span id="album-sport"></span></p>
+      <h1 class="page-head__title" id="album-title"></h1>
+      <dl class="album-head__facts">
+        <div>
+          <dt>Date</dt>
+          <dd id="album-date"></dd>
+        </div>
+        <div>
+          <dt>Venue</dt>
+          <dd id="album-venue"></dd>
+        </div>
+        <div>
+          <dt>In this album</dt>
+          <dd id="album-count"></dd>
+        </div>
+      </dl>
+      <p class="prose" id="album-note"></p>
+    </section>
+
+    <section class="shell" style="padding-bottom:clamp(56px,6vw,88px)">
+      <div class="grid grid--gallery" id="album-grid"></div>
+      <p class="album__hint">Select any frame to view it full size.</p>
+    </section>
+
+    <section class="shell album-nav">
+      <a class="album-nav__link album-nav__link--newer" id="album-newer" href="work.html">
+        <span class="album-nav__label">Newer game</span>
+        <span class="album-nav__title"></span>
+        <span class="album-nav__date"></span>
+      </a>
+      <a class="album-nav__link album-nav__link--older" id="album-older" href="work.html">
+        <span class="album-nav__label">Older game</span>
+        <span class="album-nav__title"></span>
+        <span class="album-nav__date"></span>
+      </a>
+    </section>
+
+  </div>
+
+  <section class="shell stack page-head" id="album-missing" hidden>
+    <p class="label">Archive</p>
+    <h1 class="page-head__title">That game isn't filed</h1>
+    <p class="prose">The album you asked for isn't in the archive — the link may be old, or the edit may not be up yet.</p>
+    <p><a class="btn btn--line" href="work.html">Back to the archive</a></p>
+  </section>
+
+</main>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Frame viewer" hidden>
+  <div class="lightbox__bar">
+    <p class="lightbox__count" id="lightbox-count"></p>
+    <button class="lightbox__close" id="lightbox-close" type="button">Close</button>
+  </div>
+  <button class="lightbox__nav lightbox__nav--prev" id="lightbox-prev" type="button" aria-label="Previous frame">
+    <svg width="13" height="22" viewBox="0 0 13 22" aria-hidden="true" focusable="false">
+      <path d="M12 1 2 11l10 10" fill="none" stroke="currentColor" stroke-width="1.8"/>
+    </svg>
+  </button>
+  <img class="lightbox__img" id="lightbox-img" alt="">
+  <button class="lightbox__nav lightbox__nav--next" id="lightbox-next" type="button" aria-label="Next frame">
+    <svg width="13" height="22" viewBox="0 0 13 22" aria-hidden="true" focusable="false">
+      <path d="m1 1 10 10L1 21" fill="none" stroke="currentColor" stroke-width="1.8"/>
+    </svg>
+  </button>
+</div>
+
+<footer class="site-foot">
+  <div class="shell">
+    <div class="site-foot__top">
+      <div>
+        <p class="wordmark">[Your Name]</p>
+        <p class="site-foot__tag">Sports photography — [City, Country]</p>
+      </div>
+      <div class="site-foot__links">
+        <a href="mailto:[you@domain.com]">[you@domain.com]</a>
+        <a href="https://instagram.com/[handle]">Instagram [@handle]</a>
+        <a href="tel:[+10000000000]">[+1 000 000 0000]</a>
+      </div>
+    </div>
+    <p class="site-foot__legal">© [Year] [Your Name]. All images © [Your Name] unless credited otherwise.</p>
+  </div>
+</footer>
+
+<script src="js/albums.js"></script>
+<script src="js/photos.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
