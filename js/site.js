@@ -196,7 +196,7 @@
     meta.appendChild(el("p", "album__date", shortDate(album.date)));
     meta.appendChild(el("h3", "album__title", album.title));
     meta.appendChild(el("p", "album__detail",
-      album.sport + " — " + (live ? count(album.photos.length, "frame", "frames") : "frames to come")));
+      album.sport + " — " + (live ? count(album.photos.length, "photo", "photos") : "frames to come")));
     node.appendChild(meta);
 
     return node;
@@ -232,7 +232,7 @@
     text("album-date", longDate(album.date));
     text("album-venue", album.venue);
     text("album-note", album.note);
-    text("album-count", count(album.photos.length, "frame", "frames"));
+    text("album-count", count(album.photos.length, "photo", "photos"));
 
     each(album.photos, function (name, i) {
       var button = el("button", "shot");
