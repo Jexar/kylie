@@ -26,6 +26,17 @@ window.ALBUMS = [
     note:  "Final Score: Bulls 3-1 Eagles",
     dir:   "photos/2026-09-11-parrish-bulls",
     cover: "DSC08223_VSCO.JPG"
-  }
+  },
 
+  {
+    slug:  "parrish-bulls-2026-09-25",
+    date:  "2026-09-25",
+    title: "Parrish Bulls vs Sarasota Ice Rays",
+    sport: "Hockey",
+    venue: "Ellenton Ice Arena, Parrish",
+    note:  "Final Score: Bulls 7-0 Ice Rays",
+    dir:   "photos/2026-09-25-parrish-bulls",
+    cover: "DSC00237_VSCO.JPG"
+  }
+  
 ];

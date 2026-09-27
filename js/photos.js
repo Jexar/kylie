@@ -1,7 +1,7 @@
 ﻿/* GENERATED FILE - do not edit by hand.
    Rebuilt from the photos/ folder by tools/build-photos.ps1, or by
    double-clicking build-photos.bat in the site folder.
-   Last run: 2026-09-17 19:09
+   Last run: 2026-09-26 21:25
 
    Each key below matches an album's `dir` in js/albums.js. */
 
@@ -73,6 +73,53 @@ window.ALBUM_PHOTOS = {
     "DSC09783_VSCO.JPG",
     "DSC09808_VSCO.JPG",
     "DSC09837_VSCO.JPG"
+  ],
+
+  "photos/2026-09-25-parrish-bulls": [
+    "DSC00031_VSCO.JPG",
+    "DSC00049_VSCO.JPG",
+    "DSC00074_VSCO.JPG",
+    "DSC00108_VSCO.JPG",
+    "DSC00121_VSCO.JPG",
+    "DSC00160_VSCO.JPG",
+    "DSC00237_VSCO.JPG",
+    "DSC00261_VSCO.JPG",
+    "DSC00265_VSCO.JPG",
+    "DSC00315_VSCO.JPG",
+    "DSC00339_VSCO.JPG",
+    "DSC00358_VSCO.JPG",
+    "DSC00372_VSCO.JPG",
+    "DSC00476_VSCO.JPG",
+    "DSC00506_VSCO.JPG",
+    "DSC00527_VSCO.JPG",
+    "DSC00532_VSCO.JPG",
+    "DSC00580_VSCO.JPG",
+    "DSC00584_VSCO.JPG",
+    "DSC00621_VSCO.JPG",
+    "DSC00635_VSCO.JPG",
+    "DSC00642_VSCO.JPG",
+    "DSC00666_VSCO.JPG",
+    "DSC00694_VSCO.JPG",
+    "DSC00738_VSCO.JPG",
+    "DSC00767_VSCO.JPG",
+    "DSC00796_VSCO.JPG",
+    "DSC00812_VSCO.JPG",
+    "DSC00816_VSCO.JPG",
+    "DSC00838_VSCO.JPG",
+    "DSC00840_VSCO.JPG",
+    "DSC00866_VSCO.JPG",
+    "DSC00897_VSCO.JPG",
+    "DSC00930_VSCO.JPG",
+    "DSC00954_VSCO.JPG",
+    "DSC00978_VSCO.JPG",
+    "DSC00980_VSCO.JPG",
+    "DSC09859_VSCO.JPG",
+    "DSC09882_VSCO.JPG",
+    "DSC09886_VSCO.JPG",
+    "DSC09899_VSCO.JPG",
+    "DSC09941_VSCO.JPG",
+    "DSC09956_VSCO.JPG",
+    "DSC09981_VSCO.JPG"
   ]
 
 };
