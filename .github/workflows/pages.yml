@@ -33,16 +33,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Stage the site without originals
-        run: |
-          mkdir "$RUNNER_TEMP/site"
-          cp -r . "$RUNNER_TEMP/site"
-          cd "$RUNNER_TEMP/site"
-          rm -rf .git .github .claude tools build-photos.bat README.md .gitignore
-          # Originals sit directly in each game folder; thumb/ and web/ are kept.
-          find photos -mindepth 2 -maxdepth 2 -type f -delete
-          # Originals of the home and about page images; images/web/ is kept.
-          find images -maxdepth 1 -type f \( -iname '*.jpg' -o -iname '*.jpeg' \) -delete
-          du -sh .
+        run: bash tools/stage-site.sh "$RUNNER_TEMP/site"
 
       - uses: actions/configure-pages@v5
 

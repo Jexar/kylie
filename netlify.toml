@@ -1,0 +1,7 @@
+# Publishes the site without the full-size originals: tools/stage-site.sh
+# copies everything except them into _site, and Netlify serves that.
+# Run build-photos.bat and commit its output before pushing.
+
+[build]
+  command = "bash tools/stage-site.sh _site"
+  publish = "_site"
