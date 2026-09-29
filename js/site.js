@@ -67,9 +67,11 @@
   }
 
   // Folder and file names hold spaces and dots, so every segment is encoded.
-  function photoSrc(album, name) {
+  // size is "thumb" (grids, covers) or "web" (the viewer) — the resized copies
+  // build-photos.bat makes. The originals are never served.
+  function photoSrc(album, name, size) {
     var dir = album.dir.split("/").map(encodeURIComponent).join("/");
-    return dir + "/" + encodeURIComponent(name);
+    return dir + "/" + size + "/" + encodeURIComponent(name);
   }
 
   function hasFrames(album) {
@@ -183,7 +185,7 @@
     var cover = el("div", "frame album__cover");
     if (live) {
       var img = el("img");
-      img.src = photoSrc(album, album.cover || album.photos[0]);
+      img.src = photoSrc(album, album.cover || album.photos[0], "thumb");
       img.alt = "";
       img.setAttribute("loading", "lazy");
       cover.appendChild(img);
@@ -240,7 +242,7 @@
       button.setAttribute("aria-label", "Open frame " + (i + 1) + " full size");
 
       var img = el("img");
-      img.src = photoSrc(album, name);
+      img.src = photoSrc(album, name, "thumb");
       img.alt = album.title + ", " + longDate(album.date) + " — frame " + (i + 1);
       img.setAttribute("loading", "lazy");
       img.setAttribute("decoding", "async");
@@ -303,7 +305,7 @@
     box.addEventListener("click", onBackdrop);
 
     function show(i) {
-      image.src = photoSrc(album, album.photos[i]);
+      image.src = photoSrc(album, album.photos[i], "web");
       image.alt = album.title + " — frame " + (i + 1);
       label.textContent = (i + 1) + " / " + album.photos.length;
     }

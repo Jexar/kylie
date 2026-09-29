@@ -1,0 +1,54 @@
+# Publishes the site to GitHub Pages without the full-size originals.
+#
+# The originals stay in the repo, but only the resized copies that
+# build-photos.bat makes (photos/<game>/thumb, photos/<game>/web, images/web)
+# are published. Run build-photos.bat and commit its output before pushing.
+#
+# One-time setup: repo Settings -> Pages -> Build and deployment -> Source:
+# "GitHub Actions".
+
+name: Deploy site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Stage the site without originals
+        run: |
+          mkdir "$RUNNER_TEMP/site"
+          cp -r . "$RUNNER_TEMP/site"
+          cd "$RUNNER_TEMP/site"
+          rm -rf .git .github .claude tools build-photos.bat README.md .gitignore
+          # Originals sit directly in each game folder; thumb/ and web/ are kept.
+          find photos -mindepth 2 -maxdepth 2 -type f -delete
+          # Originals of the home and about page images; images/web/ is kept.
+          find images -maxdepth 1 -type f \( -iname '*.jpg' -o -iname '*.jpeg' \) -delete
+          du -sh .
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ runner.temp }}/site
+
+      - id: deployment
+        uses: actions/deploy-pages@v4

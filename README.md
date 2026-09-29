@@ -45,9 +45,12 @@ the aspect ratio, so the crop stays consistent whatever the file's dimensions:
 | `frame--square` | 1:1 | Square |
 | `frame--wide` | 21:9 | Panoramic |
 
-Export at roughly 2000px on the long edge, quality 80, and add
-`loading="lazy"` to every image except the one at the top of the home page.
-Sports files come off the card enormous; a 6MB hero will cost you visitors.
+Drop full-size files in as they are, then double-click `build-photos.bat`. It
+makes small copies (`photos/<game>/thumb/`, `photos/<game>/web/` and
+`images/web/`), and those are what the pages load — point any new `<img>` at
+`images/web/`. Commit the copies along with the originals. The deploy workflow
+publishes only the copies, so a visitor never downloads a 10MB camera file.
+Add `loading="lazy"` to every image except the one at the top of the page.
 
 ## 3. Wire up the form
 

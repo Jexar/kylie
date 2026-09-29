@@ -1,7 +1,7 @@
 ﻿/* GENERATED FILE - do not edit by hand.
    Rebuilt from the photos/ folder by tools/build-photos.ps1, or by
    double-clicking build-photos.bat in the site folder.
-   Last run: 2026-09-26 21:25
+   Last run: 2026-09-29 19:19
 
    Each key below matches an album's `dir` in js/albums.js. */
 
