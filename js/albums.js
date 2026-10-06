@@ -37,6 +37,17 @@ window.ALBUMS = [
     note:  "Final Score: Bulls 7-0 Ice Rays",
     dir:   "photos/2026-09-25-parrish-bulls",
     cover: "DSC00237_VSCO.JPG"
-  }
+  },
+
+  {
+    slug:  "parrish-bulls-2026-10-04",
+    date:  "2026-10-04",
+    title: "Parrish Bulls vs Plant/East Lake",
+    sport: "Hockey",
+    venue: "TGH Ice Plex, Brandon",
+    note:  "Final Score: Bulls 4-1 Plant/East Lake",
+    dir:   "photos/2026-10-04-parrish-bulls",
+    cover: "DSC01902_VSCO.JPG"
+  },
   
 ];
