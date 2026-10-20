@@ -50,4 +50,14 @@ window.ALBUMS = [
     cover: "DSC01902_VSCO.JPG"
   },
   
+  {
+    slug:  "parrish-bulls-2026-10-16",
+    date:  "2026-10-16",
+    title: "Parrish Bulls vs Seminole Sharks ",
+    sport: "Hockey",
+    venue: "TGH Ice Plex, Brandon",
+    note:  "Final Score: Bulls 2-1 Sharks ",
+    dir:   "photos/2026-10-16-parrish-bulls",
+    cover: "DSC01902_VSCO.JPG"
+  },
 ];
