@@ -58,6 +58,6 @@ window.ALBUMS = [
     venue: "TGH Ice Plex, Brandon",
     note:  "Final Score: Bulls 2-1 Sharks ",
     dir:   "photos/2026-10-16-parrish-bulls",
-    cover: "DSC01902_VSCO.JPG"
+    cover: "DSC03369_VSCO.JPG"
   },
 ];
