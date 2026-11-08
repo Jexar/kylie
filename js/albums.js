@@ -71,4 +71,15 @@ window.ALBUMS = [
     dir:   "photos/2026-10-23-parrish-bulls",
     cover: "DSC04991_VSCO.JPG"
   },
+
+  {
+    slug:  "parrish-bulls-2026-11-06",
+    date:  "2026-11-06",
+    title: "Parrish Bulls vs Mitchell Mustangs",
+    sport: "Hockey",
+    venue: "Tampa Bay Skating Academy, Oldsmar",
+    note:  "Final Score: Bulls 4-1 Mustangs",
+    dir:   "photos/2026-11-06-parrish-bulls",
+    cover: "20261107_034852000_iOS.jpg"
+  },
 ];
