@@ -1,7 +1,7 @@
 ﻿/* GENERATED FILE - do not edit by hand.
    Rebuilt from the photos/ folder by tools/build-photos.ps1, or by
    double-clicking build-photos.bat in the site folder.
-   Last run: 2026-11-22 22:01
+   Last run: 2026-11-22 22:19
 
    Each key below matches an album's `dir` in js/albums.js. */
 
@@ -346,7 +346,7 @@ window.ALBUM_PHOTOS = {
     "20261107_041355000_iOS.jpg"
   ],
 
-  "photos/2026-11-22-parrish-bulls": [
+  "photos/2026-11-20-parrish-bulls": [
     "20261121_011447000_iOS.jpg",
     "20261121_011622000_iOS.jpg",
     "20261121_011744000_iOS.jpg",
