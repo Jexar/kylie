@@ -82,4 +82,15 @@ window.ALBUMS = [
     dir:   "photos/2026-11-06-parrish-bulls",
     cover: "20261107_034852000_iOS.jpg"
   },
+
+  {
+    slug:  "parrish-bulls-2026-11-20",
+    date:  "2026-11-20",
+    title: "Parrish Bulls vs Newsome Wolves",
+    sport: "Hockey",
+    venue: "Ellenton Ice and Sports Complex, Ellenton",
+    note:  "Final Score: Bulls 2-0 Wolves",
+    dir:   "photos/2026-11-20-parrish-bulls",
+    cover: "20261121_014312000_iOS.jpg"
+  },
 ];
